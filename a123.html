@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Assessment</title>
+    <style>
+        #option,#submit {
+            padding: 16px;
+            border-radius: 8px;
+            background-color: white;
+            width: 40vw;
+            font-weight: 600;
+            margin: 8px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 16px;
+        }
+
+        .card-section {
+            padding: 16px;
+        }
+
+        .product-image {
+            width: 60vw;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+        .product-tagline {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 0px 16px;
+        }
+
+        .product-name {
+            font-weight: 900;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            margin: 16px 0px 8px 0px;
+        }
+        .product-desc {
+            margin: 8px 0px 0px 0px;
+        }
+    </style>
+<script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-PZJQWDKHVE" async=""></script></head>
+
+<body style="background-color: cadetblue;">
+    <div style="display:flex;flex-direction:row;justify-content: center;">
+        <img style="width:30vw;max-width:150px;" src="./metaman.png">
+    </div>
+    <div id="question-wrapper" style="display:flex;flex-direction:column;align-items: center;">
+        <div id="question-container" style="width: 70vw;max-width: 500px;background: bisque;padding: 32px;border-radius: 8px;">
+            <p style="font-size: 1.5em;text-align: center;letter-spacing: 4px;font-weight: 900;border-bottom: 1px solid black;padding-bottom: 12px;">Assessment</p>
+            <p style="font-size: 1.25em;text-align: center;" id="question">Do you experience flaking or rough patches on your skin?</p>
+            <div name="assessment" id="assessment">
+                <div style="display:flex;justify-content: space-evenly;margin-bottom: 32px;">
+                    <button id="option" onclick="manageClick(1)">A: Everyday</button>
+                    <button id="option" onclick="manageClick(2)">B: Often</button>
+                </div>
+                <div style="display:flex;justify-content: space-evenly;;margin-bottom: 32px;">
+                    <button id="option" onclick="manageClick(3)">C: Sometimes</button>
+                    <button id="option" onclick="manageClick(4)">d: Never</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="credential" style="display: none;">
+        <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10vh;justify-content: end;">
+	    <p style="color:rgba(255,0,0,0.9);align-text:center;" id="error"></p>
+            <input id="c-email" type="email" placeholder="Example@gmail.com" style="width: 80vw;max-width: 400px;height: 24px;">
+            <input id="c-name" type="textbox" placeholder="Name" style="width: 80vw;max-width: 400px;margin-top: 18px;height:24px;">
+            <button id="submit" style="margin-top: 18px;width: 80vw;max-width: 400px;background-color:bisque;">Submit</button>
+        </div>
+    </div>
+
+    <div id="results" style="display:none">
+        <div style="display:flex;flex-direction: column;align-items: center">
+            <div style="background-color: bisque;padding: 16px 0px; border-radius: 8px;margin: 0px 36px;width:90vw;max-width: 500px;">
+                <div>
+                    <p style="text-align: center;">Your Skin Type is</p>
+                    <p id="skin-type-title" style="text-align:center;font-size:1.4em;font-weight:700;letter-spacing:4px;"></p>
+                    <p id="skin-type-description" style="text-align: center;margin: 16px 32px;"></p>
+                </div>
+                <hr style="border: 0.1px solid black;">
+                <div>
+                    <div>
+                        <p class="product-tagline">We recommend you to try the below products</p>
+                    </div>
+                    <div class="card-section">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img class="product-image" id="product1-image" alt="" srcset="">
+                                <p class="product-name" id="product1-name">Metaman</p>
+                                <p class="product-desc" id="product1-desc">description description description
+                                    description description description description description description </p>
+                                    <a href="http://wa.me/918712169379" style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button style="background-color: transparent;border: 0px;font-size: 1em;">Buy Now</button></a>
+                            </div>
+                        </div>
+                        <!-- <div class="card-wrapper">
+                            <div class="card">
+                                <img class="product-image" id="product2-image" alt="" srcset="">
+                                <p class="product-name" id="product2-name">Metaman</p>
+                                <p class="product-desc" id="product2-desc">description description description
+                                    description description description description description description </p>
+                                    <a href="http://wa.me/918712169379" style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button style="background-color: transparent;border: 0px;font-size: 1em;">Buy Now</button></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const pageName = "a";
+        const questions = {
+            a: [
+                "Does your skin feel uncomfortable or irritated when exposed to hot or cold weather, wind, or sunlight",
+                "Does your skin feel tight or dry after washing with soap or other harsh cleansers?",
+                "Do you experience flare-ups of dryness, rashes, or hives in response to certain foods, medications, or environmental triggers",
+                "Does your skin break out easily or become red and inflamed when using certain skincare products?"
+            ],
+            b: [
+                "Does your face appear shiny or greasy throughout most of the day? ",
+                "Do you find yourself blotting oil from your face multiple times a day?",
+                "Do you experience frequent breakouts (pimples, blackheads),",
+                "After washing your face, does your skin feel tight momentarily,but then quickly become oily again?,"
+            ],
+            c: [
+                "Does your skin feel tight or uncomfortable, especially after cleansing?",
+                "Would you describe your pores as more visible in the T-zone (forehead, nose, chin) compared to your heeks?",
+                "Does your skin feel oily or greasy throughout the day, even after cleansing?",
+                "Does your skin feel dry or tight after washing, but become oily again after a few hours?"
+            ],
+            d: [
+                "Does your skin tend to react easily to new skincare products?",
+                "Do you avoid fragranced skincare products because they irritate your skin?",
+                "Do you ever experience a burning sensation after using a particular product?",
+                "Does sun exposure cause a stronger reaction on your skin compared to others?"
+            ]
+        }
+        const results = {
+            a: ["Mild dry:Results suggest mild dryness. This is a common issue and can be easily managed with a regular skincare routine.",
+                "Moderate dry:This means your skin may feel tight or itchy sometimes, especially after cleansing or in dry weather.",
+                "Severe dry: This can be uncomfortable and may require a more intensive approach.",
+                "Extremely dry skin: This means your skin barrier is significantly compromised and struggles to retain moisture."
+                
+            ],
+            b: [
+                "Mild oily:You experience occasional shine and oiliness, possibly needing to blot on hot days. Breakouts might be occasional and related to specific factors. ",
+                "Moderate oily:You have consistent shine in the T-zone, possibly extending to cheeks by midday. Blotting is needed several times a day, and breakouts are a regular occurrence..",
+                "Severe oilyYour face appears shiny or greasy most of the day, with frequent blotting offering limited effectiveness. Breakouts are frequent, including blackheads and whiteheads, potentially with occasional deeper pimples.:",
+                "Extremely oily skin:  Your skin has a constant oily film and experiences breakouts as a constant issue, with a high chance of inflamed blemishes and congestion. Tightness after cleansing is minimal, quickly replaced by a surge of oil production.."
+            ],
+            c: [
+                "Mild combination skin: You experience occasional tightness or oiliness, but overall your skin has a good balance.",
+                "Moderate combination skin:You likely experience tightness after cleansing and your T-zone shows some oiliness throughout the day.",
+                "Severe combination skin:  You experience significant tightness after cleansing and noticeable oiliness in the T-zone, possibly extending to cheeks.",
+                "Extremely combination skin: Your skin feels constantly dehydrated but produces excess oil, with very visible pores in the T-zone prone to breakouts."
+            ],
+            d: [ 
+                "Mild sensitive: You experience occasional reactions to new products, possibly with slight irritation or redness. You might tolerate some fragrance in skincare, but certain scents can cause issues. Sun exposure may cause occasional sunburn or redness, but generally manageable. Careful product selection and patch testing for new products are recommended.",
+                "Moderate sensitive:You have more frequent reactions to new products, requiring patch testing before full use. Fragranced products generally irritate your skin and are best avoided. Sun exposure is a concern, and you likely require higher SPF protection. A gentle skincare routine with fragrance-free products and high SPF protection is crucial.",
+                "Severe sensitive:Your skin is highly reactive to new products, with prominent irritation upon introduction. Fragrances are a major trigger and must be avoided altogether. You experience frequent burning sensations with irritating products, and sun exposure triggers significant irritation, redness, or burning. Consulting a dermatologist for a personalized approach and potentially prescription-strength calming products might be necessary.",
+                "Extremly sensitive:Even familiar products can trigger reactions on your extremely sensitive skin, requiring a very limited and gentle routine. Even fragrance-free products might cause reactions, and burning is a common response to many skincare products. A dermatologist's guidance and a very limited, fragrance-free routine are crucial for managing your sensitive skin."
+            ]
+        }
+
+        const products = {
+            a: [
+                {
+                    image: './aloevera.jpeg',
+                    name: 'Gentle Cleanser',
+                    desc: "Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier".
+
+"
+                },{
+                    image: './aloevera.jpeg',
+                    name: 'Moisturizer with SPF',
+                    desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin".,
+"
+                }
+            ],[
+                {
+                    image: './aloevera.jpeg',
+                    name: 'Serum (Optional)',
+                    desc: "The Ordinary Hyaluronic Acid 2% + B5 is an affordable and effective serum that provides intense hydration with hyaluronic acid and vitamin B5".
+.
+"
+                },{
+                    image: './aloevera.jpeg',
+                    name: 'Moisturizer with SPF',
+                    desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin.
+"
+                },
+            b: [
+                {
+                    image: './turmeric.jpg',
+                    name: 'Gentle Cleanser',
+                    desc: "Gentle Cleanser:Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier.
+                    [
+                {
+                    image: './turmeric.jpg',
+                    name: 'Gentle Cleanser',
+                    desc: "Gentle Cleanser:Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier.
+
+
+"
+                }
+            ],
+            c: [
+                {
+                    image: './papaya.jpg',
+                    name: 'Papaya',
+                    desc: "Papaya contains enzymes that can help exfoliate the skin and unclog pores, making it great for oily skin. It's also rich in antioxidants that can help prevent damage from free radicals."
+                }
+            ],
+            d: [
+                {
+                    image: './honey.jpg',
+                    name: 'Honey',
+                    desc: "Honey is a natural humectant, which means it helps to lock in moisture. It's also rich in antioxidants and can help soothe dry, irritated skin."
+                }
+            ]
+        }
+        function calculatePercentage(page, num) {
+            var num0 = parseInt(num[0]);
+            var num1 = parseInt(num[1]);
+            var num2 = parseInt(num[2]);
+            var num3 = parseInt(num[3]);
+            var sum = (num0 + num1 + num2 + num3 - 3) - 13;
+            sum *= (-8.33);
+
+            if (Math.floor(sum) < 26) return {
+                title: results[page][0].split(":")[0],
+                description: results[page][0].split(":")[1]
+            }
+            if (Math.floor(sum) < 51) return {
+                title: results[page][1].split(":")[0],
+                description: results[page][1].split(":")[1]
+            }
+            if (Math.floor(sum) < 75) return {
+                title: results[page][2].split(":")[0],
+                description: results[page][2].split(":")[1]
+            }
+            if (Math.floor(sum) < 101) return {
+                title: results[page][3].split(":")[0],
+                description: results[page][3].split(":")[1]
+            }
+        }
+
+        window.values = "";
+        function manageClick(num) {
+            values += num;
+            if (values.length == 4) {
+                document.getElementById("question-wrapper").style.display = "none";
+                document.getElementById("credential").style.display = "block";
+            }
+            else {
+                document.getElementById("question").innerText = questions[pageName][values.length]
+            }
+        }
+document.getElementById('submit').addEventListener('click',final_submit)
+        function final_submit() {
+const validateEmail = (email) => {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+};
+	    if( validateEmail(document.getElementById("c-email").value) == null ){
+		document.getElementById("error").innerText = '*Please enter a valid email';
+	        return;	
+	    }
+            var submit = {
+                page: pageName,
+                values,
+                email: document.getElementById("c-email").value,
+                name: document.getElementById("c-name").value
+            }
+            var results = calculatePercentage(submit.page, submit.values)
+            //window.sendToFirebase(submit);
+            document.getElementById("credential").style.display = "none";
+            console.log(submit)
+            document.getElementById("results").style.display = "block";
+            document.getElementById("skin-type-title").innerText = results.title;
+            document.getElementById("skin-type-description").innerText = results.description;
+            console.log(products[pageName]);
+            //setting products
+            document.getElementById('product1-image').src = products[pageName][0].image
+            document.getElementById('product1-name').innerText = products[pageName][0].name
+            document.getElementById('product1-desc').innerText = products[pageName][0].desc
+
+            //document.getElementById('product2-image').src = products[pageName][1].image
+            //document.getElementById('product2-name').innerText = products[pageName][1].name
+            //document.getElementById('product2-desc').innerText = products[pageName][1].desc
+
+        }
+        manageClick("");
+    </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+import { doc, setDoc,collection,addDoc,getFirestore } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"; 
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCVQnEQ25Nmv3SXVswEQkzoabFhLhlzG-c",
+  authDomain: "metaman-4c6ad.firebaseapp.com",
+  projectId: "metaman-4c6ad",
+  storageBucket: "metaman-4c6ad.appspot.com",
+  messagingSenderId: "789816962605",
+  appId: "1:789816962605:web:df71be0d7ed663e5b052a4",
+  measurementId: "G-PZJQWDKHVE"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+const db = getFirestore(app);
+
+        function sendToFirebase() {
+const validateEmail = (email) => {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+};
+	    if( validateEmail(document.getElementById("c-email").value) == null ){
+		document.getElementById("error").innerText = '*Please enter a valid email';
+	        return;	
+	    }
+		var email= document.getElementById("c-email").value
+                var name= document.getElementById("c-name").value
+		var submit = {
+			email,name,pageName,values:window.values,results:(calculatePercentage(pageName,values)).title
+		}
+		const doc = addDoc(collection(db, "Users"), { submit });
+		console.log("Hereee")
+        }
+document.getElementById('submit').addEventListener('click',sendToFirebase)
+
+</script>
+
+
+</body></html>

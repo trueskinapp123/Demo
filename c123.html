@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Assessment</title>
+    <style>
+        #option,#submit {
+            padding: 16px;
+            border-radius: 8px;
+            background-color: white;
+            width: 40vw;
+            font-weight: 600;
+            margin: 8px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .card-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 16px;
+        }
+
+        .card-section {
+            padding: 16px;
+        }
+
+        .product-image {
+            width: 60vw;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+        .product-tagline {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 0px 16px;
+        }
+
+        .product-name {
+            font-weight: 900;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            margin: 16px 0px 8px 0px;
+        }
+        .product-desc {
+            margin: 8px 0px 0px 0px;
+        }
+    </style>
+<script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-PZJQWDKHVE" async=""></script></head>
+
+<body style="background-color: cadetblue;">
+    <div style="display:flex;flex-direction:row;justify-content: center;">
+        <img style="width:30vw;max-width:150px;" src="./metaman.png">
+    </div>
+    <div id="question-wrapper" style="display:flex;flex-direction:column;align-items: center;">
+        <div id="question-container" style="width: 70vw;max-width: 500px;background: bisque;padding: 32px;border-radius: 8px;">
+            <p style="font-size: 1.5em;text-align: center;letter-spacing: 4px;font-weight: 900;border-bottom: 1px solid black;padding-bottom: 12px;">Assessment</p>
+            <p style="font-size: 1.25em;text-align: center;" id="question">Does your skin feel uncomfortable or irritated when exposed to hot or cold weather, wind, or sunlight</p>
+            <div name="assessment" id="assessment">
+                <div style="display:flex;justify-content: space-evenly;margin-bottom: 32px;">
+                    <button id="option" onclick="manageClick(1)">A: Everyday</button>
+                    <button id="option" onclick="manageClick(2)">B: Often</button>
+                </div>
+                <div style="display:flex;justify-content: space-evenly;;margin-bottom: 32px;">
+                    <button id="option" onclick="manageClick(3)">C: Sometimes</button>
+                    <button id="option" onclick="manageClick(4)">d: Never</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="credential" style="display: none;">
+        <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10vh;justify-content: end;">
+	    <p style="color:rgba(255,0,0,0.9);align-text:center;" id="error"></p>
+            <input id="c-email" type="email" placeholder="Example@gmail.com" style="width: 80vw;max-width: 400px;height: 24px;">
+            <input id="c-name" type="textbox" placeholder="Name" style="width: 80vw;max-width: 400px;margin-top: 18px;height:24px;">
+            <button id="submit" style="margin-top: 18px;width: 80vw;max-width: 400px;background-color:bisque;">Submit</button>
+        </div>
+    </div>
+
+    <div id="results" style="display:none">
+        <div style="display:flex;flex-direction: column;align-items: center">
+            <div style="background-color: bisque;padding: 16px 0px; border-radius: 8px;margin: 0px 36px;width:90vw;max-width: 500px;">
+                <div>
+                    <p style="text-align: center;">Your Skin Type is</p>
+                    <p id="skin-type-title" style="text-align:center;font-size:1.4em;font-weight:700;letter-spacing:4px;"></p>
+                    <p id="skin-type-description" style="text-align: center;margin: 16px 32px;"></p>
+                </div>
+                <hr style="border: 0.1px solid black;">
+                <div>
+                    <div>
+                        <p class="product-tagline">We recommend you to try the below products</p>
+                    </div>
+                    <div class="card-section">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img class="product-image" id="product1-image" alt="" srcset="">
+                                <p class="product-name" id="product1-name">Metaman</p>
+                                <p class="product-desc" id="product1-desc">description description description
+                                    description description description description description description </p>
+                                    <a href="http://wa.me/918712169379" style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button style="background-color: transparent;border: 0px;font-size: 1em;">Buy Now</button></a>
+                            </div>
+                        </div>
+                        <!-- <div class="card-wrapper">
+                            <div class="card">
+                                <img class="product-image" id="product2-image" alt="" srcset="">
+                                <p class="product-name" id="product2-name">Metaman</p>
+                                <p class="product-desc" id="product2-desc">description description description
+                                    description description description description description description </p>
+                                    <a href="http://wa.me/918712169379" style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button style="background-color: transparent;border: 0px;font-size: 1em;">Buy Now</button></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const pageName = "c";
+        const questions = {
+            a: [
+                "Does your skin feel uncomfortable or irritated when exposed to hot or cold weather, wind, or sunlight",
+                "Does your skin feel tight or dry after washing with soap or other harsh cleansers?",
+                "Do you experience flare-ups of dryness, rashes, or hives in response to certain foods, medications, or environmental triggers",
+                "Does your skin break out easily or become red and inflamed when using certain skincare products?"
+            ],
+            b: [
+                "Do you feel like your skin needs to be washed frequently, or that it becomes dirty or oily quickly?",
+                "Have you ever been diagnosed with acne ?",
+                "Do you experience blackheads or other types of clogged pores on a regular basis?",
+                "Have you noticed that moisturizers or sunscreens make your skin feel oilier or greasier?"
+            ],
+            c: [
+                "Do you have visible pores, especially in the T-zone (forehead, nose, and chin)?",
+                "Do you experience breakouts or pimples in the oily areas of your skin, but not in the dry areas?",
+                "Does your skin tend to change with the seasons, feeling more dry or oily depending on the weather?",
+                "Does your skin feel dry or tight after washing, but become oily again after a few hours?"
+            ],
+            d: [
+                "Do you experience flaking or peeling of the skin, especially around the nose or mouth?",
+                "Does your skin feel tight or uncomfortable after washing or bathing?",
+                "Have you noticed that your skin feels better after using heavy moisturizers or emollient creams?",
+                "Does your skin have a rough or dull appearance, with visible fine lines or wrinkles?"
+            ]
+        }
+        const results = {
+            a: [
+                "Mild sensitive: You may experience occasional mild irritation, redness, or dryness in response to certain skincare products or environmental factors like cold weather or wind.",
+                "Moderate sensitive: You may experience more frequent or persistent skin irritation, redness, itching, or dryness in response to skincare products, sun exposure, or other environmental factors.",
+                "Severe sensitive: You may experience intense or painful skin reactions, including swelling, blistering, or hives, in response to a wide range of stimuli, including skincare products, detergents, fabrics, and foods.",
+                "Allergic sensitive: You may experience an immune response to specific allergens, resulting in symptoms like rash, hives, itching, or swelling. In some cases, these reactions can be severe or life-threatening."
+            ],
+            b: [
+                "Mild oily: Refers to skin that appears slightly shiny or greasy, especially in the T-zone (forehead, nose, and chin), and may have some enlarged pores.",
+                "Moderate oily: Refers to skin that appears noticeably shiny or greasy, with larger or more visible pores, and may have occasional breakouts or blackheads.",
+                "Severe oily: Refers to skin that appears very shiny or greasy, with large, visible pores, frequent breakouts or blackheads, and may feel thick or heavy to the touch.",
+                "Extremely oily skin: Refers to skin that is extremely oily and prone to frequent breakouts, blackheads, or other forms of acne, and may require medical attention or prescription medication.It's important to note that everyone's skin is unique, and oily skin levels can vary widely between individuals. If you have concerns about your skin's oiliness, it's always a good idea to consult with a dermatologist for personalized advice and treatment recommendations."
+            ],
+            c: [
+                "Mild combination skin: Refers to skin that has a mix of dry and oily areas, with some parts feeling slightly dry or tight, and others appearing slightly shiny or greasy, especially in the T-zone (forehead, nose, and chin).",
+                "Moderate combination skin: Refers to skin that has more noticeable differences between dry and oily areas, with some parts appearing noticeably dry or flaky, and others appearing noticeably shiny or greasy, with enlarged pores and occasional breakouts or blackheads.",
+                "Severe combination skin: Refers to skin that has very noticeable differences between dry and oily areas, with some parts feeling very dry, tight, or uncomfortable, and others feeling very shiny, greasy, or heavy, with frequent breakouts or blackheads.",
+                "Extremely combination skin: Refers to skin that has extreme differences between dry and oily areas, with some parts feeling extremely dry, tight, or flaky, and others feeling extremely shiny, greasy, or heavy, with frequent and severe breakouts or blackheads."
+            ],
+            d: [
+                "Mild dry: Refers to skin that feels slightly dry or tight, especially after cleansing, and may have some small, flaky patches or rough areas.",
+                "Moderate dry: Refers to skin that feels noticeably dry and tight, with larger patches of flakiness or roughness that may appear dull or lackluster.",
+                "Severe dry: Refers to skin that feels very dry, tight, and uncomfortable, with significant flakiness or roughness that may be accompanied by redness, itching, or other irritation.",
+                "Extremely dry skin: Refers to skin that is extremely dry and uncomfortable, with deep cracks, fissures, or bleeding that may require medical attention"
+            ]
+        }
+
+        const products = {
+            a: [
+                {
+                    image: './aloevera.jpeg',
+                    name: 'Aloevera',
+                    desc: "Aloe vera is a great natural moisturizer and can help soothe dry skin. It also contains antioxidants that can help improve skin's texture and elasticity."
+                }
+            ],
+            b: [
+                {
+                    image: './turmeric.jpg',
+                    name: 'Turmeric',
+                    desc: "Turmeric has anti-inflammatory and antibacterial properties that can help reduce oiliness and prevent breakouts. It can also help brighten the skin and reduce the appearance of scars and pigmentation."
+                }
+            ],
+            c: [
+                {
+                    image: './papaya.jpg',
+                    name: 'Papaya',
+                    desc: "Papaya contains enzymes that can help exfoliate the skin and unclog pores, making it great for oily skin. It's also rich in antioxidants that can help prevent damage from free radicals."
+                }
+            ],
+            d: [
+                {
+                    image: './honey.jpg',
+                    name: 'Honey',
+                    desc: "Honey is a natural humectant, which means it helps to lock in moisture. It's also rich in antioxidants and can help soothe dry, irritated skin."
+                }
+            ]
+        }
+        function calculatePercentage(page, num) {
+            var num0 = parseInt(num[0]);
+            var num1 = parseInt(num[1]);
+            var num2 = parseInt(num[2]);
+            var num3 = parseInt(num[3]);
+            var sum = (num0 + num1 + num2 + num3 - 3) - 13;
+            sum *= (-8.33);
+
+            if (Math.floor(sum) < 26) return {
+                title: results[page][0].split(":")[0],
+                description: results[page][0].split(":")[1]
+            }
+            if (Math.floor(sum) < 51) return {
+                title: results[page][1].split(":")[0],
+                description: results[page][1].split(":")[1]
+            }
+            if (Math.floor(sum) < 75) return {
+                title: results[page][2].split(":")[0],
+                description: results[page][2].split(":")[1]
+            }
+            if (Math.floor(sum) < 101) return {
+                title: results[page][3].split(":")[0],
+                description: results[page][3].split(":")[1]
+            }
+        }
+
+        window.values = "";
+        function manageClick(num) {
+            values += num;
+            if (values.length == 4) {
+                document.getElementById("question-wrapper").style.display = "none";
+                document.getElementById("credential").style.display = "block";
+            }
+            else {
+                document.getElementById("question").innerText = questions[pageName][values.length]
+            }
+        }
+document.getElementById('submit').addEventListener('click',final_submit)
+        function final_submit() {
+const validateEmail = (email) => {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+};
+	    if( validateEmail(document.getElementById("c-email").value) == null ){
+		document.getElementById("error").innerText = '*Please enter a valid email';
+	        return;	
+	    }
+            var submit = {
+                page: pageName,
+                values,
+                email: document.getElementById("c-email").value,
+                name: document.getElementById("c-name").value
+            }
+            var results = calculatePercentage(submit.page, submit.values)
+            //window.sendToFirebase(submit);
+            document.getElementById("credential").style.display = "none";
+            console.log(submit)
+            document.getElementById("results").style.display = "block";
+            document.getElementById("skin-type-title").innerText = results.title;
+            document.getElementById("skin-type-description").innerText = results.description;
+            console.log(products[pageName]);
+            //setting products
+            document.getElementById('product1-image').src = products[pageName][0].image
+            document.getElementById('product1-name').innerText = products[pageName][0].name
+            document.getElementById('product1-desc').innerText = products[pageName][0].desc
+
+            //document.getElementById('product2-image').src = products[pageName][1].image
+            //document.getElementById('product2-name').innerText = products[pageName][1].name
+            //document.getElementById('product2-desc').innerText = products[pageName][1].desc
+
+        }
+        manageClick("");
+    </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+import { doc, setDoc,collection,addDoc,getFirestore } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"; 
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCVQnEQ25Nmv3SXVswEQkzoabFhLhlzG-c",
+  authDomain: "metaman-4c6ad.firebaseapp.com",
+  projectId: "metaman-4c6ad",
+  storageBucket: "metaman-4c6ad.appspot.com",
+  messagingSenderId: "789816962605",
+  appId: "1:789816962605:web:df71be0d7ed663e5b052a4",
+  measurementId: "G-PZJQWDKHVE"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+const db = getFirestore(app);
+
+        function sendToFirebase() {
+const validateEmail = (email) => {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+};
+	    if( validateEmail(document.getElementById("c-email").value) == null ){
+		document.getElementById("error").innerText = '*Please enter a valid email';
+	        return;	
+	    }
+		var email= document.getElementById("c-email").value
+                var name= document.getElementById("c-name").value
+		var submit = {
+			email,name,pageName,values:window.values,results:(calculatePercentage(pageName,values)).title
+		}
+		const doc = addDoc(collection(db, "Users"), { submit });
+		console.log("Hereee")
+        }
+document.getElementById('submit').addEventListener('click',sendToFirebase)
+
+</script>
+
+
+</body></html>
