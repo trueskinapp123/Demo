@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Assessment</title>
     <style>
-        #option,#submit {
+        #option,
+        #submit {
             padding: 16px;
             border-radius: 8px;
             background-color: white;
@@ -54,20 +57,26 @@
             letter-spacing: 1px;
             margin: 16px 0px 8px 0px;
         }
+
         .product-desc {
             margin: 8px 0px 0px 0px;
         }
     </style>
-<script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-PZJQWDKHVE" async=""></script></head>
+    <script src="https://www.googletagmanager.com/gtag/js?l=dataLayer&amp;id=G-PZJQWDKHVE" async=""></script>
+</head>
 
 <body style="background-color: #2B1511;">
     <div style="display:flex;flex-direction:row;justify-content: center;">
         <img style="width:30vw;max-width:150px;" src="./FINAL.png">
     </div>
     <div id="question-wrapper" style="display:flex;flex-direction:column;align-items: center;">
-        <div id="question-container" style="width: 70vw;max-width: 500px;background: bisque;padding: 32px;border-radius: 8px;">
-            <p style="font-size: 1.5em;text-align: center;letter-spacing: 4px;font-weight: 900;border-bottom: 1px solid black;padding-bottom: 12px;">Assessment</p>
-            <p style="font-size: 1.25em;text-align: center;" id="question">Does your skin feel uncomfortable or irritated when exposed to hot or cold weather, wind, or sunlight</p>
+        <div id="question-container"
+            style="width: 70vw;max-width: 500px;background: bisque;padding: 32px;border-radius: 8px;">
+            <p
+                style="font-size: 1.5em;text-align: center;letter-spacing: 4px;font-weight: 900;border-bottom: 1px solid black;padding-bottom: 12px;">
+                Assessment</p>
+            <p style="font-size: 1.25em;text-align: center;" id="question">Does your skin feel uncomfortable or
+                irritated when exposed to hot or cold weather, wind, or sunlight</p>
             <div name="assessment" id="assessment">
                 <div style="display:flex;justify-content: space-evenly;margin-bottom: 32px;">
                     <button id="option" onclick="manageClick(1)">A: Everyday</button>
@@ -82,19 +91,24 @@
     </div>
     <div id="credential" style="display: none;">
         <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10vh;justify-content: end;">
-	    <p style="color:rgba(255,0,0,0.9);align-text:center;" id="error"></p>
-            <input id="c-email" type="email" placeholder="Example@gmail.com" style="width: 80vw;max-width: 400px;height: 24px;">
-            <input id="c-name" type="textbox" placeholder="Name" style="width: 80vw;max-width: 400px;margin-top: 18px;height:24px;">
-            <button id="submit" style="margin-top: 18px;width: 80vw;max-width: 400px;background-color:bisque;">Submit</button>
+            <p style="color:rgba(255,0,0,0.9);align-text:center;" id="error"></p>
+            <input id="c-email" type="email" placeholder="Example@gmail.com"
+                style="width: 80vw;max-width: 400px;height: 24px;">
+            <input id="c-name" type="textbox" placeholder="Name"
+                style="width: 80vw;max-width: 400px;margin-top: 18px;height:24px;">
+            <button id="submit"
+                style="margin-top: 18px;width: 80vw;max-width: 400px;background-color:bisque;">Submit</button>
         </div>
     </div>
 
     <div id="results" style="display:none">
         <div style="display:flex;flex-direction: column;align-items: center">
-            <div style="background-color: bisque;padding: 16px 0px; border-radius: 8px;margin: 0px 36px;width:90vw;max-width: 500px;">
+            <div
+                style="background-color: bisque;padding: 16px 0px; border-radius: 8px;margin: 0px 36px;width:90vw;max-width: 500px;">
                 <div>
                     <p style="text-align: center;">Your Skin Type is</p>
-                    <p id="skin-type-title" style="text-align:center;font-size:1.4em;font-weight:700;letter-spacing:4px;"></p>
+                    <p id="skin-type-title"
+                        style="text-align:center;font-size:1.4em;font-weight:700;letter-spacing:4px;"></p>
                     <p id="skin-type-description" style="text-align: center;margin: 16px 32px;"></p>
                 </div>
                 <hr style="border: 0.1px solid black;">
@@ -109,7 +123,10 @@
                                 <p class="product-name" id="product1-name">Metaman</p>
                                 <p class="product-desc" id="product1-desc">description description description
                                     description description description description description description </p>
-                                    <a href="http://wa.me/919966443364" style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button style="background-color: transparent;border: 0px;font-size: 1em;">Buy Now</button></a>
+                                <a href="http://wa.me/919966443364"
+                                    style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button
+                                        style="background-color: transparent;border: 0px;font-size: 1em;">Buy
+                                        Now</button></a>
                             </div>
                         </div>
                         <!-- <div class="card-wrapper">
@@ -126,60 +143,62 @@
             </div>
         </div>
     </div>
-    
+
 
     <script>
         const pageName = "a";
         const questions = {
             a: [
-                "Does your skin feel uncomfortable or irritated when exposed to hot or cold weather, wind, or sunlight",
-                "Does your skin feel tight or dry after washing with soap or other harsh cleansers?",
-                "Do you experience flare-ups of dryness, rashes, or hives in response to certain foods, medications, or environmental triggers",
-                "Does your skin break out easily or become red and inflamed when using certain skincare products?"
+                "Do you experience flaking or rough patches on your skin?",
+                "Does your skin feel tight or uncomfortable, especially after cleansing? ",
+                "Does your skin react easily to changes in weather (cold, wind)?",
+                "Does your skin break easily or become red or inflamed when using certain skincare products?"
+
             ],
             b: [
-                "Do you feel like your skin needs to be washed frequently, or that it becomes dirty or oily quickly?",
-                "Have you ever been diagnosed with acne ?",
-                "Do you experience blackheads or other types of clogged pores on a regular basis?",
-                "Have you noticed that moisturizers or sunscreens make your skin feel oilier or greasier?"
+                "Does your skin feel tight or uncomfortable, especially after cleansing?",
+                "Would you describe your pores as more visible in the T-zone (forehead, nose, chin) compared to your cheeks?",
+                "Does your skin feel oily or greasy throughout the day, even after cleansing?",
+                "After washing your face your skin feels tight momentarily and the oily again?"
             ],
             c: [
-                "Do you have visible pores, especially in the T-zone (forehead, nose, and chin)?",
-                "Do you experience breakouts or pimples in the oily areas of your skin, but not in the dry areas?",
-                "Does your skin tend to change with the seasons, feeling more dry or oily depending on the weather?",
-                "Does your skin feel dry or tight after washing, but become oily again after a few hours?"
+                "Does your face appear shiny or greasy throughout most of the day?",
+                "Do you find yourself blotting oil from your face multiple times a day? ",
+                "Do you experience frequent breakouts (pimples, blackheads)? ",
+                "After washing your face, does your skin feel tight momentarily, but then quickly become oily again? "
             ],
             d: [
-                "Do you experience flaking or peeling of the skin, especially around the nose or mouth?",
-                "Does your skin feel tight or uncomfortable after washing or bathing?",
-                "Have you noticed that your skin feels better after using heavy moisturizers or emollient creams?",
-                "Does your skin have a rough or dull appearance, with visible fine lines or wrinkles?"
+                "Does your skin tend to react easily to new skincare products? ",
+                "Do you avoid fragranced skincare products because they irritate your skin?",
+                "Do you ever experience a burning sensation after using a particular product? ",
+                "Does sun exposure cause a stronger reaction on your skin compared to others?"
             ]
         }
         const results = {
             a: [
-                "Mild sensitive: You may experience occasional mild irritation, redness, or dryness in response to certain skincare products or environmental factors like cold weather or wind.",
-                "Moderate sensitive: You may experience more frequent or persistent skin irritation, redness, itching, or dryness in response to skincare products, sun exposure, or other environmental factors.",
-                "Severe sensitive: You may experience intense or painful skin reactions, including swelling, blistering, or hives, in response to a wide range of stimuli, including skincare products, detergents, fabrics, and foods.",
-                "Allergic sensitive: You may experience an immune response to specific allergens, resulting in symptoms like rash, hives, itching, or swelling. In some cases, these reactions can be severe or life-threatening."
+                "Mild dry:Results suggest mild dryness. This is a common issue and can be easily managed with a regular skincare routine",
+                "Moderate dry:This means your skin may feel tight or itchy sometimes, especially after cleansing or in dry weather.",
+                "Severe dry:This means your skin may feel tight or itchy sometimes, especially after cleansing or in dry weather.",
+                "Extremely dry skin:This can be uncomfortable and may require a more intensive approach."
             ],
             b: [
-                "Mild oily: Refers to skin that appears slightly shiny or greasy, especially in the T-zone (forehead, nose, and chin), and may have some enlarged pores.",
-                "Moderate oily: Refers to skin that appears noticeably shiny or greasy, with larger or more visible pores, and may have occasional breakouts or blackheads.",
-                "Severe oily: Refers to skin that appears very shiny or greasy, with large, visible pores, frequent breakouts or blackheads, and may feel thick or heavy to the touch.",
-                "Extremely oily skin: Refers to skin that is extremely oily and prone to frequent breakouts, blackheads, or other forms of acne, and may require medical attention or prescription medication.It's important to note that everyone's skin is unique, and oily skin levels can vary widely between individuals. If you have concerns about your skin's oiliness, it's always a good idea to consult with a dermatologist for personalized advice and treatment recommendations."
+                "Mild combination skin: You experience occasional tightness or oiliness, but overall your skin has a good balance.",
+                "Moderate combination skin: You likely experience tightness after cleansing and your T-zone shows some oiliness throughout the day. ",
+                "Severe combination skin: You experience significant tightness after cleansing and noticeable oiliness in the T-zone, possibly extending to cheeks. ",
+                "Extremely combination skin: Your skin feels constantly dehydrated but produces excess oil, with very visible pores in the T-zone prone to breakouts."
+
             ],
             c: [
-                "Mild combination skin: Refers to skin that has a mix of dry and oily areas, with some parts feeling slightly dry or tight, and others appearing slightly shiny or greasy, especially in the T-zone (forehead, nose, and chin).",
-                "Moderate combination skin: Refers to skin that has more noticeable differences between dry and oily areas, with some parts appearing noticeably dry or flaky, and others appearing noticeably shiny or greasy, with enlarged pores and occasional breakouts or blackheads.",
-                "Severe combination skin: Refers to skin that has very noticeable differences between dry and oily areas, with some parts feeling very dry, tight, or uncomfortable, and others feeling very shiny, greasy, or heavy, with frequent breakouts or blackheads.",
-                "Extremely combination skin: Refers to skin that has extreme differences between dry and oily areas, with some parts feeling extremely dry, tight, or flaky, and others feeling extremely shiny, greasy, or heavy, with frequent and severe breakouts or blackheads."
+                "Mild oily: You experience occasional shine and oiliness, possibly needing to blot on hot days. Breakouts might be occasional and related to specific factors.",
+                "Moderate oily: You have consistent shine in the T-zone, possibly extending to cheeks by midday. Blotting is needed several times a day, and breakouts are a regular occurrence.",
+                "Severe oily: Your face appears shiny or greasy most of the day, with frequent blotting offering limited effectiveness. Breakouts are frequent, including blackheads and whiteheads, potentially with occasional deeper pimples.",
+                "Extremely oily: Your skin has a constant oily film and experiences breakouts as a constant issue, with a high chance of inflamed blemishes and congestion. Tightness after cleansing is minimal, quickly replaced by a surge of oil production.."
             ],
             d: [
-                "Mild dry: Refers to skin that feels slightly dry or tight, especially after cleansing, and may have some small, flaky patches or rough areas.",
-                "Moderate dry: Refers to skin that feels noticeably dry and tight, with larger patches of flakiness or roughness that may appear dull or lackluster.",
-                "Severe dry: Refers to skin that feels very dry, tight, and uncomfortable, with significant flakiness or roughness that may be accompanied by redness, itching, or other irritation.",
-                "Extremely dry skin: Refers to skin that is extremely dry and uncomfortable, with deep cracks, fissures, or bleeding that may require medical attention"
+                "Mild sensitive:You experience occasional reactions to new products, possibly with slight irritation or redness. You might tolerate some fragrance in skincare, but certain scents can cause issues. Sun exposure may cause occasional sunburn or redness, but generally manageable. Careful product selection and patch testing for new products are recommended. ",
+                "Moderate sensitive: You have more frequent reactions to new products, requiring patch testing before full use. Fragranced products generally irritate your skin and are best avoided. Sun exposure is a concern, and you likely require higher SPF protection. A gentle skincare routine with fragrance-free products and high SPF protection is crucial.                ",
+                "Severe sensitive:Your skin is highly reactive to new products, with prominent irritation upon introduction. Fragrances are a major trigger and must be avoided altogether. You experience frequent burning sensations with irritating products, and sun exposure triggers significant irritation, redness, or burning. Consulting a dermatologist for a personalized approach and potentially prescription-strength calming products might be necessary. ",
+                "Extremely sensitive: Even familiar products can trigger reactions on your extremely sensitive skin, requiring a very limited and gentle routine. Even fragrance-free products might cause reactions, and burning is a common response to many skincare products. A dermatologist's guidance and a very limited, fragrance-free routine are crucial for managing your sensitive skin. "
             ]
         }
 
@@ -187,29 +206,127 @@
             a: [
                 {
                     image: './aloevera.jpeg',
-                    name: 'Aloevera',
-                    desc: "Aloe vera is a great natural moisturizer and can help soothe dry skin. It also contains antioxidants that can help improve skin's texture and elasticity."
+                    name: 'Gentle Cleanser',
+                    desc: "Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier.",
+                    link: "amazon.com"
+                }, {
+                    image: './aloevera.jpeg',
+                    name: 'Moisturizer with SPF',
+                    desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin."
+                }, {
+                    image: './aloevera.jpeg',
+                    name: 'Serum (Optional)',
+                    desc: "The Ordinary Hyaluronic Acid 2% + B5 is an affordable and effective serum that provides intense hydration with hyaluronic acid and vitamin B5."
+                }, {
+                    image: './aloevera.jpeg',
+                    name: 'Night Cream',
+                    desc: "CeraVe Moisturizing Cream is a fragrance-free, rich moisturizer that provides long-lasting hydration and helps repair the skin barrier overnight."
                 }
             ],
             b: [
                 {
                     image: './turmeric.jpg',
-                    name: 'Turmeric',
-                    desc: "Turmeric has anti-inflammatory and antibacterial properties that can help reduce oiliness and prevent breakouts. It can also help brighten the skin and reduce the appearance of scars and pigmentation."
+                    name: 'Cleanser',
+                    desc: ":La Roche-Posay Toleriane Hydrating Gentle Cleanser - This fragrance-free cleanser gently removes impurities without stripping the skin's natural oils.                    "
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Moisturizer',
+                    desc: "CeraVe Facial Moisturizing Lotion PM - This lightweight, oil-free lotion provides all-day hydration without clogging pores. CeraVe Facial Moisturizing Lotion PM"
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Sunscreen',
+                    desc: "EltaMD UV Clear Broad-Spectrum SPF 46 - This oil-free sunscreen offers broad-spectrum protection without leaving a greasy residue."
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Moderate Combination Skin Cleanser ',
+                    desc: ":CeraVe Foaming Facial Cleanser - This foaming cleanser removes excess oil without over-drying the skin. "
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Moisturizer',
+                    desc: "Neutrogena Hydro Boost Water Gel - This lightweight gel-based moisturizer provides intense hydration without clogging pores."
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Severe Combination Skin Morning Cleanser',
+                    desc: "Cetaphil Gentle Skin Cleanser - This gentle cleanser effectively removes dirt and oil without stripping the skin"
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Night Cleanser',
+                    desc: "La Roche-Posay Effaclar Purifying Foaming Gel Cleanser - This foaming cleanser helps control oil and combat breakouts in the T-zone."
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Moisturizer',
+                    desc: "Kiehl's Ultra Facial Cream - This lightweight cream provides all-day hydration for drier areas without clogging pores."
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Extremely Combination Skin morning cleaser',
+                    desc: "Cetaphil Daily Facial Cleanser - This gentle cleanser removes excess oil without over-drying the skin."
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'exfoliator',
+                    desc: "Paula's Choice 2% BHA Liquid Exfoliant - This exfoliating treatment helps unclog pores, minimize their appearance, and control oil production ."
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Hydrating Toner',
+                    desc: "Klairs Supple Preparation Facial Toner - This alcohol-free toner provides a boost of hydration and soothes the skin."
+                },
+                {
+                    image: './turmeric.jpg',
+                    name: 'Moisturizer',
+                    desc: "Cosrx Advanced Snail 96 Mucin Power Essence - This lightweight essence provides intense hydration and helps improve skin texture."
                 }
             ],
             c: [
                 {
                     image: './papaya.jpg',
-                    name: 'Papaya',
-                    desc: "Papaya contains enzymes that can help exfoliate the skin and unclog pores, making it great for oily skin. It's also rich in antioxidants that can help prevent damage from free radicals."
+                    name: 'Cleanser - Oily skin',
+                    desc: "La Roche-Posay Effaclar Purifying Foaming Gel Cleanser (for moderate to severe oiliness)"
+                },
+                {
+                    image: './papaya.jpg',
+                    name: 'Moisturizer',
+                    desc: "All Oily Skin: CeraVe Facial Moisturizing Lotion PM - CeraVe Facial Moisturizing Lotion PM (lightweight, oil-free)"
+                },
+                {
+                    image: './papaya.jpg',
+                    name: 'Exfoliator',
+                    desc: "The Ordinary Salicylic Acid 2% Solution (beta hydroxy acid to unclog pores)"
+                },
+                {
+                    image: './papaya.jpg',
+                    name: 'Sunscreen (always!):',
+                    desc: "EltaMD UV Clear Broad-Spectrum SPF 46 (oil-free, non-comedogenic)"
                 }
             ],
             d: [
                 {
                     image: './honey.jpg',
-                    name: 'Honey',
-                    desc: "Honey is a natural humectant, which means it helps to lock in moisture. It's also rich in antioxidants and can help soothe dry, irritated skin."
+                    name: 'Cetaphil Gentle Skin Cleanse',
+                    desc: "This fragrance-free cleanser is gentle enough for even the most sensitive skin and effectively removes dirt and oil without stripping moisture."
+                },
+                {
+                    image: './honey.jpg',
+                    name: 'Moisturizer (All Levels, Adjust Based on Needs)',
+                    desc: "Option 1 (Lighter):La Roche-Posay Toleriane Double Repair Face Moisturizer : This fragrance-free, lightweight moisturizer provides hydration and helps repair the skin barrier."
+                },
+                {
+                    image: './honey.jpg',
+                    name: 'CeraVe Moisturizing Cream',
+                    desc: "Option 2 (Richer):CeraVe Moisturizing Cream : This fragrance-free, richer cream provides long-lasting hydration, especially beneficial for drier or extremely sensitive skin at night."
+                },
+                {
+                    image: './honey.jpg',
+                    name: 'EltaMD UV Clear Broad-Spectrum SPF 46',
+                    desc: "Oil-free EltaMD UV Clear Broad-Spectrum SPF 46 helps calm and protect sensitive skin types prone to breakouts, rosacea and discoloration."
                 }
             ]
         }
@@ -250,17 +367,17 @@
                 document.getElementById("question").innerText = questions[pageName][values.length]
             }
         }
-document.getElementById('submit').addEventListener('click',final_submit)
+        document.getElementById('submit').addEventListener('click', final_submit)
         function final_submit() {
-const validateEmail = (email) => {
-  return email.match(
-    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  );
-};
-	    if( validateEmail(document.getElementById("c-email").value) == null ){
-		document.getElementById("error").innerText = '*Please enter a valid email';
-	        return;	
-	    }
+            const validateEmail = (email) => {
+                return email.match(
+                    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                );
+            };
+            if (validateEmail(document.getElementById("c-email").value) == null) {
+                document.getElementById("error").innerText = '*Please enter a valid email';
+                return;
+            }
             var submit = {
                 page: pageName,
                 values,
@@ -287,53 +404,55 @@ const validateEmail = (email) => {
         }
         manageClick("");
     </script>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
-import { doc, setDoc,collection,addDoc,getFirestore } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"; 
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        import { doc, setDoc, collection, addDoc, getFirestore } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCVQnEQ25Nmv3SXVswEQkzoabFhLhlzG-c",
-  authDomain: "metaman-4c6ad.firebaseapp.com",
-  projectId: "metaman-4c6ad",
-  storageBucket: "metaman-4c6ad.appspot.com",
-  messagingSenderId: "789816962605",
-  appId: "1:789816962605:web:df71be0d7ed663e5b052a4",
-  measurementId: "G-PZJQWDKHVE"
-};
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCVQnEQ25Nmv3SXVswEQkzoabFhLhlzG-c",
+            authDomain: "metaman-4c6ad.firebaseapp.com",
+            projectId: "metaman-4c6ad",
+            storageBucket: "metaman-4c6ad.appspot.com",
+            messagingSenderId: "789816962605",
+            appId: "1:789816962605:web:df71be0d7ed663e5b052a4",
+            measurementId: "G-PZJQWDKHVE"
+        };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
 
-const db = getFirestore(app);
+        const db = getFirestore(app);
 
         function sendToFirebase() {
-const validateEmail = (email) => {
-  return email.match(
-    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  );
-};
-	    if( validateEmail(document.getElementById("c-email").value) == null ){
-		document.getElementById("error").innerText = '*Please enter a valid email';
-	        return;	
-	    }
-		var email= document.getElementById("c-email").value
-                var name= document.getElementById("c-name").value
-		var submit = {
-			email,name,pageName,values:window.values,results:(calculatePercentage(pageName,values)).title
-		}
-		const doc = addDoc(collection(db, "Users"), { submit });
-		console.log("Hereee")
+            const validateEmail = (email) => {
+                return email.match(
+                    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                );
+            };
+            if (validateEmail(document.getElementById("c-email").value) == null) {
+                document.getElementById("error").innerText = '*Please enter a valid email';
+                return;
+            }
+            var email = document.getElementById("c-email").value
+            var name = document.getElementById("c-name").value
+            var submit = {
+                email, name, pageName, values: window.values, results: (calculatePercentage(pageName, values)).title
+            }
+            const doc = addDoc(collection(db, "Users"), { submit });
+            console.log("Hereee")
         }
-document.getElementById('submit').addEventListener('click',sendToFirebase)
+        document.getElementById('submit').addEventListener('click', sendToFirebase)
 
-</script>
+    </script>
 
 
-</body></html>
+</body>
+
+</html>

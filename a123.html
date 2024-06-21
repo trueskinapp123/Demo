@@ -109,7 +109,7 @@
                                 <p class="product-name" id="product1-name">Metaman</p>
                                 <p class="product-desc" id="product1-desc">description description description
                                     description description description description description description </p>
-                                    <a href="http://wa.me/918712169379" style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button style="background-color: transparent;border: 0px;font-size: 1em;">Buy Now</button></a>
+                                    <a href="http://wa.me/9966443364" style="width: 100%;margin: 16px;padding: 6px;background-color: lightgreen;border: 1px solid black;border-radius: 8px;color: black;display: flex;flex-direction: column;justify-content: center;align-items: center;text-decoration: none;"><button style="background-color: transparent;border: 0px;font-size: 1em;">Buy Now</button></a>
                             </div>
                         </div>
                         <!-- <div class="card-wrapper">
@@ -182,65 +182,48 @@
                 "Extremly sensitive:Even familiar products can trigger reactions on your extremely sensitive skin, requiring a very limited and gentle routine. Even fragrance-free products might cause reactions, and burning is a common response to many skincare products. A dermatologist's guidance and a very limited, fragrance-free routine are crucial for managing your sensitive skin."
             ]
         }
-
-        const products = {
-            a: [
-                {
-                    image: './aloevera.jpeg',
-                    name: 'Gentle Cleanser',
-                    desc: "Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier".
-
-"
-                },{
-                    image: './aloevera.jpeg',
-                    name: 'Moisturizer with SPF',
-                    desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin".,
-"
-                }
-            ],[
-                {
-                    image: './aloevera.jpeg',
-                    name: 'Serum (Optional)',
-                    desc: "The Ordinary Hyaluronic Acid 2% + B5 is an affordable and effective serum that provides intense hydration with hyaluronic acid and vitamin B5".
-.
-"
-                },{
-                    image: './aloevera.jpeg',
-                    name: 'Moisturizer with SPF',
-                    desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin.
-"
-                },
-            b: [
-                {
-                    image: './turmeric.jpg',
-                    name: 'Gentle Cleanser',
-                    desc: "Gentle Cleanser:Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier.
-                    [
-                {
-                    image: './turmeric.jpg',
-                    name: 'Gentle Cleanser',
-                    desc: "Gentle Cleanser:Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier.
-
-
-"
-                }
-            ],
-            c: [
-                {
-                    image: './papaya.jpg',
-                    name: 'Papaya',
-                    desc: "Papaya contains enzymes that can help exfoliate the skin and unclog pores, making it great for oily skin. It's also rich in antioxidants that can help prevent damage from free radicals."
-                }
-            ],
-            d: [
-                {
-                    image: './honey.jpg',
-                    name: 'Honey',
-                    desc: "Honey is a natural humectant, which means it helps to lock in moisture. It's also rich in antioxidants and can help soothe dry, irritated skin."
-                }
-            ]
+const products = {
+    a: [
+        {
+            image: './aloevera.jpeg',
+            name: 'Gentle Cleanser',
+            desc: "Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier"
+        },
+        {
+            image: './aloevera.jpeg',
+            name: 'Moisturizer with SPF',
+            desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin"
         }
-        function calculatePercentage(page, num) {
+    ],
+    b: [
+        {
+            image: './turmeric.jpg',
+            name: 'Gentle Cleanser',
+            desc: "Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier"
+        },
+        {
+            image: './turmeric.jpg',
+            name: 'Moisturizer with SPF',
+            desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin"
+        }
+    ],
+    c: [
+        {
+            image: './papaya.jpg',
+            name: 'Papaya',
+            desc: "Papaya contains enzymes that can help exfoliate the skin and unclog pores, making it great for oily skin. It's also rich in antioxidants that can help prevent damage from free radicals."
+        }
+    ],
+    d: [
+        {
+            image: './honey.jpg',
+            name: 'Honey',
+            desc: "Honey is a natural humectant, which means it helps to lock in moisture. It's also rich in antioxidants and can help soothe dry, irritated skin."
+        }
+    ]
+};
+
+            function calculatePercentage(page, num) {
             var num0 = parseInt(num[0]);
             var num1 = parseInt(num[1]);
             var num2 = parseInt(num[2]);

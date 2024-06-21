@@ -357,7 +357,7 @@ button {
 .banner_taital {
     width: 100%;
     float: left;
-    font-size: 80px;
+    font-size: 50px;
     color: #ffffff;
     font-weight: bold;
     text-align: center;
@@ -382,14 +382,14 @@ button {
 .read_bt a {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: #141414;
     background-color: #ffffff;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
     margin-top: 50px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .read_bt a:hover {
