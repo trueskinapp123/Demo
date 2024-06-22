@@ -357,7 +357,7 @@ button {
 .banner_taital {
     width: 100%;
     float: left;
-    font-size: 50px;
+    font-size: 40px;
     color: #ffffff;
     font-weight: bold;
     text-align: center;
@@ -366,9 +366,9 @@ button {
 }
 
 .banner_text {
-    width: 63%;
+    width: 73%;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 17px;
     color: #ffffff;
     text-align: center;
 }
@@ -377,6 +377,7 @@ button {
     width: 200px;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Sanserif', Regular;
 }
 
 .read_bt a {

@@ -2,4 +2,4 @@ git add .
 
 git commit -m "your message"
 
-git push origin amaama
+git push origin master
