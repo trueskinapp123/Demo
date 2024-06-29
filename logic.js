@@ -81,12 +81,13 @@ const products = {
         {
             image: './amz/cleanser.jpg',
             name: 'Cleanser',
-            desc: ":La Roche-Posay Toleriane Hydrating Gentle Cleanser - This fragrance-free cleanser gently removes impurities without stripping the skin's natural oils.",
+            desc: "La Roche-Posay Toleriane Hydrating Gentle Cleanser - This fragrance-free cleanser gently removes impurities without stripping the skin's natural oils.",
             link: "https://amzn.to/3VUPBsL"
         },
         {
             image: './amz/ceravee.jpg',
-            name: 'Moisturizer',
+            name:
+             'Moisturizer',
             desc: "CeraVe Facial Moisturizing Lotion PM - This lightweight, oil-free lotion provides all-day hydration without clogging pores. CeraVe Facial Moisturizing Lotion PM",
             link: "https://amzn.to/3Xwrjqd"
         },
@@ -99,7 +100,7 @@ const products = {
         {
             image: './amz/ceravee-foaming.jpg',
             name: 'Moderate Combination Skin Cleanser ',
-            desc: ":CeraVe Foaming Facial Cleanser - This foaming cleanser removes excess oil without over-drying the skin. ",
+            desc: "CeraVe Foaming Facial Cleanser - This foaming cleanser removes excess oil without over-drying the skin. ",
             link: "https://amzn.to/3VS82OK"
         },
         {
@@ -173,7 +174,7 @@ const products = {
         },
         {
             image: './amz/eltamduv.webp',
-            name: 'Sunscreen (always!):',
+            name: 'Sunscreen (always!)',
             desc: "EltaMD UV Clear Broad-Spectrum SPF 46 (oil-free, non-comedogenic)",
             link: "https://amzn.to/4bf8dI7"
         }
