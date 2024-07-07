@@ -58,125 +58,124 @@ const products = {
         {
             image: './amz/cetaphil.png',
             name: 'Gentle Cleanser',
-            desc: "Cetaphil Gentle Skin Cleanser is a fragrance-free, dermatologist-recommended cleanser that effectively removes dirt and oil without stripping the skin's natural moisture barrier.",
-            link: "https://amzn.to/4c9WjAL"
+            desc: "Minimalist Gentle Face Wash with 6% Oat Extract & Hyaluronic Acid is considered ideal for dry skin.",
+            link: "https://amzn.to/3ztSoAl"
         }, {
             image: './amz/vanicream.jpg',
-            name: 'Moisturizer with SPF',
-            desc: "Vanicream Lite Lotion SPF 30 is a lightweight, oil-free moisturizer that provides broad-spectrum sun protection and hydration for sensitive skin.",
-            link: "https://amzn.to/4beMfFk"
+            name: 'Moisturizer',
+            desc: "This fragrance-free cream is packed with ingredients like ceramides, hyaluronic acid, and shea butter to deeply hydrate and nourish dry skin.",
+            link: "https://amzn.to/4eMOliJ"
         }, {
             image: './amz/serum.jpg',
-            name: 'Serum (Optional)',
-            desc: "The Ordinary Hyaluronic Acid 2% + B5 is an affordable and effective serum that provides intense hydration with hyaluronic acid and vitamin B5.",
-            link: "https://amzn.to/4cx2Yoj"
+            name: 'Sunscreen (SPF 50+)',
+            desc: "This is a lightweight, oil-free sunscreen that is enriched with ceramides and vitamin C.",
+            link: "https://amzn.to/3xAKzs6"
         }, {
             image: './amz/night-cream.webp',
             name: 'Night Cream',
-            desc: "CeraVe Moisturizing Cream is a fragrance-free, rich moisturizer that provides long-lasting hydration and helps repair the skin barrier overnight.",
-            link: "https://amzn.to/3VDS4GJ"
+            desc: " This lightweight gel is a good option for those who are looking for a hydrating night cream that won't feel greasy. ",
+            link: "https://amzn.to/3W9zGa8"
         }
     ],
     b: [
         {
             image: './amz/cleanser.jpg',
             name: 'Cleanser',
-            desc: "La Roche-Posay Toleriane Hydrating Gentle Cleanser - This fragrance-free cleanser gently removes impurities without stripping the skin's natural oils.",
-            link: "https://amzn.to/3VUPBsL"
+            desc: "While Cetaphil Gentle Skin Cleanser is fragrance-free and non-comedogenic (won't clog pores),suitability for combination skin.",
+            link: "https://amzn.to/3zCkI3k"
         },
         {
             image: './amz/ceravee.jpg',
-            name:
-             'Moisturizer',
-            desc: "CeraVe Facial Moisturizing Lotion PM - This lightweight, oil-free lotion provides all-day hydration without clogging pores. CeraVe Facial Moisturizing Lotion PM",
-            link: "https://amzn.to/3Xwrjqd"
+            name: 'Moisturizer',
+            desc: "This moisturizer is formulated with ceramides and hyaluronic acid.",
+            link: "https://amzn.to/3WbCm5Z"
         },
         {
             image: './amz/eltamd.jpg',
             name: 'Sunscreen',
-            desc: "EltaMD UV Clear Broad-Spectrum SPF 46 - This oil-free sunscreen offers broad-spectrum protection without leaving a greasy residue.",
-            link: "https://amzn.to/3zbb6fT"
+            desc: "Sunscreen offers the highest level of protection against UVA and UVB rays with SPF 50 and PA++++ rating.",
+            link: "https://amzn.to/4cs6l0g"
         },
         {
             image: './amz/ceravee-foaming.jpg',
-            name: 'Moderate Combination Skin Cleanser ',
-            desc: "CeraVe Foaming Facial Cleanser - This foaming cleanser removes excess oil without over-drying the skin. ",
-            link: "https://amzn.to/3VS82OK"
+            name: 'Exfoliator:',
+            desc: " Salicylic acid easily penetrates the pore lining and scoops out the dirt, debris, and sebum (clinically proven to work better than oil-based traditional salicylic acid), so skin looks clear and soft. Removes blackheads & whiteheads by keeping your pores clean and controlling excessive oil ",
+            link: "https://amzn.to/45RVH0g"
         },
-        {
-            image: './amz/neutrogena.webp',
-            name: 'Moisturizer',
-            desc: "Neutrogena Hydro Boost Water Gel - This lightweight gel-based moisturizer provides intense hydration without clogging pores.",
-            link: "https://amzn.to/45GkmET"
-        },
-        {
-            image: './amz/cetaphil.jpg',
-            name: 'Severe Combination Skin Morning Cleanser',
-            desc: "Cetaphil Gentle Skin Cleanser - This gentle cleanser effectively removes dirt and oil without stripping the skin. ",
-            link: "https://amzn.to/3VzTD8u"
-        },
-        {
-            image: './amz/laroche.jpg',
-            name: 'Night Cleanser',
-            desc: "La Roche-Posay Effaclar Purifying Foaming Gel Cleanser - This foaming cleanser helps control oil and combat breakouts in the T-zone.",
-            link: "https://amzn.to/4ew8KZ7"
-        },
-        {
-            image: './amz/kiehl.webp',
-            name: 'Moisturizer',
-            desc: "Kiehl's Ultra Facial Cream - This lightweight cream provides all-day hydration for drier areas without clogging pores.",
-            link: "https://amzn.to/3LgubjL"
-        },
-        {
-            image: './amz/cetaphil.jpg',
-            name: 'Extremely Combination Skin morning cleaser',
-            desc: "Cetaphil Daily Facial Cleanser - This gentle cleanser removes excess oil without over-drying the skin.",
-            link: "https://amzn.to/3VXopcY"
-        },
-        {
-            image: './amz/paulas.webp',
-            name: 'exfoliator',
-            desc: "Paula's Choice 2% BHA Liquid Exfoliant - This exfoliating treatment helps unclog pores, minimize their appearance, and control oil production .",
-            link: "https://amzn.to/3zf2tks"
-        },
-        {
-            image: './amz/toner.jpg',
-            name: 'Hydrating Toner',
-            desc: "Klairs Supple Preparation Facial Toner - This alcohol-free toner provides a boost of hydration and soothes the skin.",
-            link: "https://amzn.to/3XCB8D6"
-        },
-        {
-            image: './amz/cosrx.jpg',
-            name: 'Moisturizer',
-            desc: "Cosrx Advanced Snail 96 Mucin Power Essence - This lightweight essence provides intense hydration and helps improve skin texture.",
-            link: "https://amzn.to/3XyniS0"
-        }
+        // {
+        //     image: './amz/neutrogena.webp',
+        //     name: 'Moisturizer',
+        //     desc: "Neutrogena Hydro Boost Water Gel - This lightweight gel-based moisturizer provides intense hydration without clogging pores.",
+        //     link: "https://amzn.to/45GkmET"
+        // },
+        // {
+        //     image: './amz/cetaphil.jpg',
+        //     name: 'Severe Combination Skin Morning Cleanser',
+        //     desc: "Cetaphil Gentle Skin Cleanser - This gentle cleanser effectively removes dirt and oil without stripping the skin. ",
+        //     link: "https://amzn.to/3VzTD8u"
+        // },
+        // {
+        //     image: './amz/laroche.jpg',
+        //     name: 'Night Cleanser',
+        //     desc: "La Roche-Posay Effaclar Purifying Foaming Gel Cleanser - This foaming cleanser helps control oil and combat breakouts in the T-zone.",
+        //     link: "https://amzn.to/4ew8KZ7"
+        // },
+        // {
+        //     image: './amz/kiehl.webp',
+        //     name: 'Moisturizer',
+        //     desc: "Kiehl's Ultra Facial Cream - This lightweight cream provides all-day hydration for drier areas without clogging pores.",
+        //     link: "https://amzn.to/3LgubjL"
+        // },
+        // {
+        //     image: './amz/cetaphil.jpg',
+        //     name: 'Extremely Combination Skin morning cleaser',
+        //     desc: "Cetaphil Daily Facial Cleanser - This gentle cleanser removes excess oil without over-drying the skin.",
+        //     link: "https://amzn.to/3VXopcY"
+        // },
+        // {
+        //     image: './amz/paulas.webp',
+        //     name: 'exfoliator',
+        //     desc: "Paula's Choice 2% BHA Liquid Exfoliant - This exfoliating treatment helps unclog pores, minimize their appearance, and control oil production .",
+        //     link: "https://amzn.to/3zf2tks"
+        // },
+        // {
+        //     image: './amz/toner.jpg',
+        //     name: 'Hydrating Toner',
+        //     desc: "Klairs Supple Preparation Facial Toner - This alcohol-free toner provides a boost of hydration and soothes the skin.",
+        //     link: "https://amzn.to/3XCB8D6"
+        // },
+        // {
+        //     image: './amz/cosrx.jpg',
+        //     name: 'Moisturizer',
+        //     desc: "Cosrx Advanced Snail 96 Mucin Power Essence - This lightweight essence provides intense hydration and helps improve skin texture.",
+        //     link: "https://amzn.to/3XyniS0"
+        // }
     ],
     c: [
         {
             image: './amz/posay.jpg',
             name: 'Cleanser - Oily skin',
-            desc: "La Roche-Posay Effaclar Purifying Foaming Gel Cleanser (for moderate to severe oiliness)",
-            link: "https://amzn.to/3zemest"
+            desc: " This cleanser is a popular drugstore option that contains salicylic acid to help unclog pores and prevent breakouts.",
+            link: "https://amzn.to/3XLebO0"
         },
         {
             image: './amz/cera.webp',
             name: 'Moisturizer',
-            desc: "All Oily Skin: CeraVe Facial Moisturizing Lotion PM - CeraVe Facial Moisturizing Lotion PM (lightweight, oil-free)",
-            link: "https://amzn.to/3XvtSsx"
+            desc: "This fragrance-free moisturizer is formulated for sensitive skin but works well for oily skin.",
+            link: "https://amzn.to/4cs7TaA"
 
         },
         {
             image: './amz/expo.jpg',
             name: 'Exfoliator',
-            desc: "The Ordinary Salicylic Acid 2% Solution (beta hydroxy acid to unclog pores)",
-            link: "https://amzn.to/3XHFZma"
+            desc: "Salicylic acid easily penetrates the pore lining and scoops out the dirt, debris, and sebum (clinically proven to work better than oil-based traditional salicylic acid), so skin looks clear and soft.",
+            link: "https://amzn.to/3W8hIoa"
         },
         {
             image: './amz/eltamduv.webp',
-            name: 'Sunscreen (always!)',
-            desc: "EltaMD UV Clear Broad-Spectrum SPF 46 (oil-free, non-comedogenic)",
-            link: "https://amzn.to/4bf8dI7"
+            name: 'Sunscreen (SPF) ',
+            desc: "Re equil Oxybenzone & OMC Free Sunscreen offers broad spectrum protection from UVA and UVB rays with SPF 50 and PA +++ rating. This protects the skin from sun damage and premature ageing.",
+            link: "https://amzn.to/3RQ4pq7"
         }
     ],
     d: [
@@ -188,21 +187,21 @@ const products = {
         },
         {
             image: './amz/larocheposay.jpg',
-            name: 'Moisturizer (All Levels, Adjust Based on Needs)',
-            desc: "La Roche-Posay Toleriane Double Repair Face Moisturizer : This fragrance-free, lightweight moisturizer provides hydration and helps repair the skin barrier.",
-            link: "https://amzn.to/4ezMqxO"
+            name: 'Moisturizer',
+            desc: " This fragrance-free moisturizer offers a good balance of hydration and repair. ",
+            link: "https://amzn.to/3W73qV1"
         },
         {
             image: './amz/cera-s.webp',
-            name: 'CeraVe Moisturizing Cream',
-            desc: "Option 2 (Richer):CeraVe Moisturizing Cream : This fragrance-free, richer cream provides long-lasting hydration, especially beneficial for drier or extremely sensitive skin at night.",
-            link: "https://amzn.to/4ccvQlZ"
+            name: 'Sunscreen',
+            desc: "RE' EQUIL Oxybenzone and OMC Free Sunscreen For Oily, Sensitive & Acne Prone Skin | Prevents Acne Breakouts | No White Cast | SPF 50 PA+++",
+            link: "https://amzn.to/3SihUPJ"
         },
         {
             image: './amz/eltamd.jpg',
-            name: 'EltaMD UV Clear Broad-Spectrum SPF 46',
-            desc: "Oil-free EltaMD UV Clear Broad-Spectrum SPF 46 helps calm and protect sensitive skin types prone to breakouts, rosacea and discoloration.",
-            link: "https://amzn.to/3VVgc98"
+            name: 'Toner',
+            desc: "This fragrance-free toner contains hyaluronic acid for hydration and rice water, which has soothing and brightening properties.",
+            link: "https://amzn.to/3XQ1aTj"
         }
     ]
 }
