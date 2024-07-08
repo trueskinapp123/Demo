@@ -56,7 +56,7 @@ const results = {
 const products = {
     a: [
         {
-            image: './amz/cetaphil.png',
+            image: 'C:\Users\Asus\Desktop\new-keyword\Demo\minimalist1.jpg',
             name: 'Gentle Cleanser',
             desc: "Minimalist Gentle Face Wash with 6% Oat Extract & Hyaluronic Acid is considered ideal for dry skin.",
             link: "https://amzn.to/3ztSoAl"
