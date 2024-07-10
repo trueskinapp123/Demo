@@ -61,43 +61,44 @@ const products = {
             desc: "Minimalist Gentle Face Wash with 6% Oat Extract & Hyaluronic Acid is considered ideal for dry skin.",
             link: "https://amzn.to/3ztSoAl"
         }, {
-            image: './amz/vanicream.jpg',
+            image: 'https://m.media-amazon.com/images/I/61nUnwyWPAL._SL1100_.jpg',
             name: 'Moisturizer',
             desc: "This fragrance-free cream is packed with ingredients like ceramides, hyaluronic acid, and shea butter to deeply hydrate and nourish dry skin.",
             link: "https://amzn.to/4eMOliJ"
         }, {
-            image: './amz/serum.jpg',
+            image: 'https://m.media-amazon.com/images/I/51WxoPbLITL._SX679_.jpg',
             name: 'Sunscreen (SPF 50+)',
             desc: "This is a lightweight, oil-free sunscreen that is enriched with ceramides and vitamin C.",
             link: "https://amzn.to/3xAKzs6"
         }, {
-            image: './amz/night-cream.webp',
+            image: 'https://m.media-amazon.com/images/I/51+OHK6hyfL._SX679_.jpg',
             name: 'Night Cream',
             desc: " This lightweight gel is a good option for those who are looking for a hydrating night cream that won't feel greasy. ",
             link: "https://amzn.to/3W9zGa8"
         }
+
     ],
     b: [
         {
-            image: './amz/cleanser.jpg',
+            image: 'https://m.media-amazon.com/images/I/71t9JRry+3L._SY879_.jpg',
             name: 'Cleanser',
             desc: "While Cetaphil Gentle Skin Cleanser is fragrance-free and non-comedogenic (won't clog pores),suitability for combination skin.",
             link: "https://amzn.to/3zCkI3k"
         },
         {
-            image: './amz/ceravee.jpg',
+            image: 'https://m.media-amazon.com/images/I/51cov5RQH-L._SX679_.jpg',
             name: 'Moisturizer',
             desc: "This moisturizer is formulated with ceramides and hyaluronic acid.",
             link: "https://amzn.to/3WbCm5Z"
         },
         {
-            image: './amz/eltamd.jpg',
+            image: 'https://m.media-amazon.com/images/I/5129UTeY5KL._SX679_.jpg',
             name: 'Sunscreen',
             desc: "Sunscreen offers the highest level of protection against UVA and UVB rays with SPF 50 and PA++++ rating.",
             link: "https://amzn.to/4cs6l0g"
         },
         {
-            image: './amz/ceravee-foaming.jpg',
+            image: 'https://m.media-amazon.com/images/I/71SE3QtPs0L._SX679_.jpg',
             name: 'Exfoliator:',
             desc: " Salicylic acid easily penetrates the pore lining and scoops out the dirt, debris, and sebum (clinically proven to work better than oil-based traditional salicylic acid), so skin looks clear and soft. Removes blackheads & whiteheads by keeping your pores clean and controlling excessive oil ",
             link: "https://amzn.to/45RVH0g"
@@ -153,26 +154,26 @@ const products = {
     ],
     c: [
         {
-            image: './amz/posay.jpg',
+            image: 'https://m.media-amazon.com/images/I/51MObvOIglL._SX679_.jpg',
             name: 'Cleanser - Oily skin',
             desc: " This cleanser is a popular drugstore option that contains salicylic acid to help unclog pores and prevent breakouts.",
             link: "https://amzn.to/3XLebO0"
         },
         {
-            image: './amz/cera.webp',
+            image: 'https://m.media-amazon.com/images/I/51Sy8ktByyL._SX679_.jpg',
             name: 'Moisturizer',
             desc: "This fragrance-free moisturizer is formulated for sensitive skin but works well for oily skin.",
-            link: "https://amzn.to/4cs7TaA"
+            link: "https://amzn.to/4cP9cAJ"
 
         },
         {
-            image: './amz/expo.jpg',
+            image: 'https://m.media-amazon.com/images/I/71SE3QtPs0L._SX679_.jpg',
             name: 'Exfoliator',
             desc: "Salicylic acid easily penetrates the pore lining and scoops out the dirt, debris, and sebum (clinically proven to work better than oil-based traditional salicylic acid), so skin looks clear and soft.",
             link: "https://amzn.to/3W8hIoa"
         },
         {
-            image: './amz/eltamduv.webp',
+            image: 'https://m.media-amazon.com/images/I/5129UTeY5KL._SX679_.jpg',
             name: 'Sunscreen (SPF) ',
             desc: "Re equil Oxybenzone & OMC Free Sunscreen offers broad spectrum protection from UVA and UVB rays with SPF 50 and PA +++ rating. This protects the skin from sun damage and premature ageing.",
             link: "https://amzn.to/3RQ4pq7"
@@ -180,25 +181,25 @@ const products = {
     ],
     d: [
         {
-            image: './amz/ceta.webp',
+            image: 'https://m.media-amazon.com/images/I/71t9JRry+3L._SL1500_.jpg',
             name: 'Cetaphil Gentle Skin Cleanse',
             desc: "This fragrance-free cleanser is gentle enough for even the most sensitive skin and effectively removes dirt and oil without stripping moisture.",
             link: "https://amzn.to/3zdSqwd"
         },
         {
-            image: './amz/larocheposay.jpg',
+            image: 'https://m.media-amazon.com/images/I/41nG+6JC80L._SX679_.jpg',
             name: 'Moisturizer',
             desc: " This fragrance-free moisturizer offers a good balance of hydration and repair. ",
             link: "https://amzn.to/3W73qV1"
         },
         {
-            image: './amz/cera-s.webp',
+            image: 'https://m.media-amazon.com/images/I/51a0hzsYORL._SX679_.jpg',
             name: 'Sunscreen',
             desc: "RE' EQUIL Oxybenzone and OMC Free Sunscreen For Oily, Sensitive & Acne Prone Skin | Prevents Acne Breakouts | No White Cast | SPF 50 PA+++",
             link: "https://amzn.to/3SihUPJ"
         },
         {
-            image: './amz/eltamd.jpg',
+            image: 'https://m.media-amazon.com/images/I/51Ji9BviBWL._SX679_.jpg',
             name: 'Toner',
             desc: "This fragrance-free toner contains hyaluronic acid for hydration and rice water, which has soothing and brightening properties.",
             link: "https://amzn.to/3XQ1aTj"
