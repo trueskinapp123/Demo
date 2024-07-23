@@ -80,25 +80,25 @@ const products = {
     ],
     b: [
         {
-            image: 'https://m.media-amazon.com/images/I/71t9JRry+3L._SY879_.jpg',
+            image:'https://m.media-amazon.com/images/I/71t9JRry+3L._SY879_.jpg',
             name: 'Cleanser',
             desc: "While Cetaphil Gentle Skin Cleanser is fragrance-free and non-comedogenic (won't clog pores),suitability for combination skin.",
             link: "https://amzn.to/3zCkI3k"
         },
         {
-            image: 'https://m.media-amazon.com/images/I/51cov5RQH-L._SX679_.jpg',
+            image:'https://m.media-amazon.com/images/I/51cov5RQH-L._SX679_.jpg',
             name: 'Moisturizer',
             desc: "This moisturizer is formulated with ceramides and hyaluronic acid.",
             link: "https://amzn.to/3WbCm5Z"
         },
         {
-            image: 'https://m.media-amazon.com/images/I/5129UTeY5KL._SX679_.jpg',
+            image:'https://m.media-amazon.com/images/I/5129UTeY5KL._SX679_.jpg',
             name: 'Sunscreen',
             desc: "Sunscreen offers the highest level of protection against UVA and UVB rays with SPF 50 and PA++++ rating.",
             link: "https://amzn.to/4cs6l0g"
         },
         {
-            image: 'https://m.media-amazon.com/images/I/71SE3QtPs0L._SX679_.jpg',
+            image:'https://m.media-amazon.com/images/I/71SE3QtPs0L._SX679_.jpg',
             name: 'Exfoliator:',
             desc: " Salicylic acid easily penetrates the pore lining and scoops out the dirt, debris, and sebum (clinically proven to work better than oil-based traditional salicylic acid), so skin looks clear and soft. Removes blackheads & whiteheads by keeping your pores clean and controlling excessive oil ",
             link: "https://amzn.to/45RVH0g"
@@ -154,10 +154,10 @@ const products = {
     ],
     c: [
         {
-            image: 'https://m.media-amazon.com/images/I/51MObvOIglL._SX679_.jpg',
+            image: 'https://m.media-amazon.com/images/I/810+klt6nmL._SX679_.jpg',
             name: 'Cleanser - Oily skin',
-            desc: " This cleanser is a popular drugstore option that contains salicylic acid to help unclog pores and prevent breakouts.",
-            link: "https://amzn.to/3XLebO0"
+            desc: " WOW Skin Science Neem Face Wash combines Neem extract, known for its purifying properties, with salicylic acid to combat acne, reduce oiliness, and deeply cleanse pores.",
+            link: "https://amzn.to/3LB7Ayg"
         },
         {
             image: 'https://m.media-amazon.com/images/I/51Sy8ktByyL._SX679_.jpg',
