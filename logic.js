@@ -61,10 +61,10 @@ const products = {
             desc: "Minimalist Gentle Face Wash with 6% Oat Extract & Hyaluronic Acid is considered ideal for dry skin.",
             link: "https://amzn.to/3ztSoAl"
         }, {
-            image: 'https://m.media-amazon.com/images/I/61nUnwyWPAL._SL1100_.jpg',
+            image: 'https://m.media-amazon.com/images/I/51dOuh5FY8L._SX679_.jpg',
             name: 'Moisturizer',
-            desc: "This fragrance-free cream is packed with ingredients like ceramides, hyaluronic acid, and shea butter to deeply hydrate and nourish dry skin.",
-            link: "https://amzn.to/4eMOliJ"
+            desc: "Soft Touch Body Lotion works on All Skin Types. Leaves the skin smooth and silky Enriched with pure Coconut Milk, Honey & 100% Natural moisturisers for body Powered with unique formula that helps keep the skin hydrated for 72 hours",
+            link: "https://amzn.to/4dlYNMC"
         }, {
             image: 'https://m.media-amazon.com/images/I/51WxoPbLITL._SX679_.jpg',
             name: 'Sunscreen (SPF 50+)',
