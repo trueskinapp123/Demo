@@ -40,10 +40,57 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+ <style>
+  .float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+
+  .my-float {
+    font-size: 50px;
+    color: #25D366; /* WhatsApp Green */
+  }
+
+  .whatsapp-text {
+    display: none;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #25D366;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  .float:hover .whatsapp-text {
+    display: inline-block;
+    animation: slideIn 0.5s ease-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+ </style>
 </head>
 
 <body>
+  <a href="https://chat.whatsapp.com/KPwQ8rMl14dIGy7dtWknyy" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    <span class="whatsapp-text">Join our community</span>
+  </a>
 
   <div class="hero_area">
     <!-- header section strats -->
